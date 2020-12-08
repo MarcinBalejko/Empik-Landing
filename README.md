@@ -1,3 +1,14 @@
+# Empik-Landing
+
+> A simple landing page for online shop created with React and Bootstrap. It contains a clickable map and a product carousel.
+
+## Usage
+
+```
+npm install
+npm run start
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

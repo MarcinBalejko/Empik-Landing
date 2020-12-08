@@ -1,38 +1,250 @@
-.App {
-  text-align: center;
+main {
+  min-height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.latest-products-container {
+  min-height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.multi-carousel {
+  min-height: 10vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  padding: 1rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.main-container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 80vh;
+}
+
+.mapdiv {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+
+  margin: auto;
+  padding: auto;
+  height: 100%;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+.mapdiv path {
+  fill: #5e94c7;
+  stroke: #fff;
+  stroke-width: 4px;
+  transition: fill 0.5s;
+
+  -webkit-animation: fadeInFromNone 0.5s ease-out;
+  -moz-animation: fadeInFromNone 0.5s ease-out;
+  -o-animation: fadeInFromNone 0.5s ease-out;
+  animation: fadeInFromNone 0.5s ease-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mapdiv :hover {
+  fill: rgb(10, 64, 114);
+}
+
+.svg-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+
+  width: 50%;
+}
+
+path {
+  cursor: pointer;
+}
+
+svg {
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
+}
+
+footer {
+  opacity: 0.7;
+  margin-top: 1.5%;
+}
+
+.carousel-close-btn {
+  padding: 1%;
+}
+
+.fa-times-circle {
+  font-size: 30px;
+}
+
+.multi-carousel {
+  max-width: 100vw;
+  height: 100%;
+}
+
+.product-screen {
+  margin-bottom: 10%;
+}
+
+.react-multiple-carousel__arrow:focus {
+  outline: none !important;
+  outline-offset: none !important;
+}
+
+.rounded {
+  height: 90%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .svg-div {
+    width: 100%;
+    margin-top: 10%;
+    border: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  svg {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  footer {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 740px) {
+  .svg-div {
+    width: 90%;
+  }
+
+  svg {
+    width: 90%;
+    height: 80%;
+  }
+
+  footer {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 741px) and (max-width: 850px) {
+  .svg-div {
+    width: 87%;
+    width: 80%;
+  }
+
+  svg {
+    width: 80%;
+    height: 80%;
+  }
+
+  footer {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1200px) {
+  .svg-div {
+    width: 80%;
+    height: 80%;
+  }
+
+  svg {
+    width: 70%;
+    height: 70%;
+  }
+  footer {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+  footer {
+    margin-top: 6%;
+  }
+}
+
+.parent:hover .child {
+  display: block;
+
+  -webkit-animation: fadeInFromNone 0.5s ease-out;
+  -moz-animation: fadeInFromNone 0.5s ease-out;
+  -o-animation: fadeInFromNone 0.5s ease-out;
+  animation: fadeInFromNone 0.5s ease-out;
+}
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
   }
 }
